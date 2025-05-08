@@ -1,0 +1,205 @@
+/* cargaCamion.css */
+
+/* Contenedor general para la sección de Carga Camión */
+.carga-camion-container,
+.expediente-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la tabla de expedientes */
+.expediente-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.expediente-tabla th,
+.expediente-tabla td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.expediente-tabla th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Botón general */
+.btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para los cuadros de tipo card (formularios y secciones) */
+.card {
+  background-color: #f9f9f9;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario para Nuevo Inventario */
+.inventario-form {
+  max-width: 100%;
+}
+
+.inventario-form input,
+.inventario-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Pantalla de finalización: formulario para la firma */
+.finalizacion-form {
+  max-width: 100%;
+  text-align: center;
+}
+
+.firma-container {
+  margin: 12px 0;
+  text-align: left;
+}
+
+.firma-container p {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.firma-canvas {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 150px;
+}
+
+/* Ajustes responsive para dispositivos móviles */
+@media (max-width: 600px) {
+  .expediente-tabla th,
+  .expediente-tabla td {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 2px;
+  }
+  
+  .firma-canvas {
+    height: 120px;
+  }
+}
+
+/* Estilos para el formulario de Login */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive en móviles para el login */
+@media (max-width: 600px) {
+  .login-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 15px;
+  }
+  
+  .login-form input,
+  .login-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .login-container h2 {
+    font-size: 20px;
+  }
+}
+
+/* ============================== */
+/* Nuevos estilos para "Agregar Objeto" */
+/* ============================== */
+.add-object-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.add-object {
+  font-size: 16px;
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.add-object .icon {
+  font-size: 20px;
+}

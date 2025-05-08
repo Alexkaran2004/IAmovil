@@ -1,0 +1,186 @@
+/* Ajustes generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ececeb; /* Gris suave fondo */
+  color: #333;
+}
+
+/* Contenedor principal */
+.app-container {
+  display: flex; /* Menú y contenido en la misma línea */
+  height: 100vh; /* Ajuste al 100% de la pantalla */
+}
+
+/* Menú lateral */
+.sidebar {
+  width: 250px; /* Espacio suficiente para iconos y texto */
+  height: 100vh;
+  background-color: #2F4A83; /* Azul menú lateral */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Fijar menú */
+  left: 0;
+  top: 0;
+  overflow-y: auto; /* Desplazamiento si hay demasiados elementos */
+}
+
+/* Contenido principal */
+.main-content {
+  flex-grow: 1; /* Expande automáticamente */
+  margin-left: 260px; /* Separación del menú lateral */
+  padding: 30px;
+  width: calc(100% - 260px); /* Ajuste dinámico */
+  background-color: #ececec; /* Fondo diferenciado */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Formulario de Inventario */
+.inventario-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+}
+
+/* Estructura del formulario */
+.inventario-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Secciones del formulario */
+.form-section {
+  display: flex;
+  gap: 20px;
+}
+
+/* Grupo de campos */
+.form-group {
+  flex: 1;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+/* Campos de entrada */
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Botón de guardar */
+button.guardar {
+  background-color: #FFA500;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+button.guardar:hover {
+  background-color: #e69500;
+}
+
+/* Botones generales */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Botones colores */
+button.rojo {
+  background-color: #FA0000; /* Rojo */
+  color: white;
+}
+
+button.rojo:hover {
+  background-color: #cc0000;
+}
+
+button.naranja {
+  background-color: #FFA500; /* Naranja */
+  color: white;
+}
+
+button.naranja:hover {
+  background-color: #e69500;
+}
+
+button.azul {
+  background-color: #2F4A83; /* Azul menú lateral */
+  color: white;
+}
+
+button.azul:hover {
+  background-color: #263E7B; /* Azul menú desplegable */
+}
+
+/* Menús */
+.navbar {
+  background-color: #2F4A83; /* Azul menú lateral */
+  color: white;
+  padding: 15px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 10px 0;
+}
+
+.navbar a {
+  color: #ececec; /* Blanco iconos menú vertical */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #2F4A83; /* Azul menú lateral */
+  color: white;
+}

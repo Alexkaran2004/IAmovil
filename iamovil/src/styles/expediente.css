@@ -1,0 +1,160 @@
+/* 🎯 Estilos generales para Expedientes */
+.expediente-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.expediente-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* 📊 Estilos para la tabla de expedientes */
+.expediente-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.expediente-table thead {
+  background-color: #007BFF;
+  color: white;
+}
+
+.expediente-table th,
+.expediente-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.expediente-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* 📊 Tabla dentro del modal */
+.detalle-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.detalle-table th,
+.detalle-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.detalle-table thead {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* 🔘 Botón general */
+.btn {
+  background: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* ⭐ Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #007BFF;
+}
+
+/* Opcional: Estilos para el contenido del modal cuando se muestran detalles en formato "tabla" */
+.detalle-seccion {
+  margin-bottom: 20px;
+}
+
+.detalle-seccion h4 {
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.detalle-seccion p {
+  margin: 5px 0;
+}
+
+.detalle-foto {
+  margin-top: 15px;
+}
+
+.detalle-foto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 600px) {
+  .expediente-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  
+  .expediente-table th,
+  .expediente-table td,
+  .detalle-table th,
+  .detalle-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  .modal-content h3 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,110 @@
+/* Ajustes generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ececeb; /* Gris suave fondo */
+  color: #333;
+}
+
+/* Menú lateral */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #2F4A83; /* Azul menú lateral */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  font-size: 18px;
+  color: #ececec; /* Blanco iconos */
+  border-left: 5px solid transparent;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #ececec;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar li.active {
+  background-color: #FFA500; /* Naranja resaltado */
+  border-left: 5px solid #FA0000; /* Rojo borde activo */
+}
+
+/* Contenido principal */
+.main-content {
+  margin-left: 270px; /* Ajuste para que no quede debajo del menú */
+  padding: 20px;
+}
+
+.icon {
+  font-size: 20px;
+}
+/* Menú lateral */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #2F4A83; /* Azul menú lateral */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  font-size: 18px;
+  color: #ececec; /* Blanco iconos */
+  border-left: 5px solid transparent;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #ececec;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar li.active {
+  background-color: #FFA500; /* Naranja resaltado */
+  border-left: 5px solid #FA0000; /* Rojo borde activo */
+}
+
+/* Ajuste del contenido */
+.main-content {
+  margin-left: 270px; /* Desplazar el contenido para que no quede bajo el menú */
+  padding: 20px;
+}
+
+.icon {
+  font-size: 20px;
+}
+

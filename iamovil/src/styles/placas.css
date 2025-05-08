@@ -1,0 +1,138 @@
+/* placas.css */
+
+/* Contenedor principal para la sección de Placas */
+.placas {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Títulos */
+  .placas h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  /* Formulario de placas */
+  .form-placas {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  /* Uso de fieldset para agrupar datos */
+  .form-placas fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .form-placas legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  /* Grupos de formularios */
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Mensaje de error */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botón para enviar el formulario de placas */
+  .form-placas button.azul {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .form-placas button.azul:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Tabla para la lista de placas */
+  .placas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .placas-table thead {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .placas-table th,
+  .placas-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .placas-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive para dispositivos móviles */
+  @media (max-width: 600px) {
+    .placas {
+      width: 95%;
+    }
+    
+    .form-placas button.azul {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+    
+    .placas-table th,
+    .placas-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
